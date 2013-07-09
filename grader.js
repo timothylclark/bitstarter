@@ -5,7 +5,7 @@ automatic grader for hw3 part 3, startup engineering
 
 var fs = require('fs');
 var program = require('commander');
-var cheerio - require('cheerio');
+var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 
@@ -39,6 +39,7 @@ var checkHtmlFile = function(htmlfile, checksfile) {
 
 var clone = function(fn) {
     return fn.bind({});
+
 };
 
 if(require.main == module) {
